@@ -103,6 +103,10 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -273,9 +277,6 @@
               },
               "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Data.Interfaces\\FootballDataWrapper.Data.Interfaces.csproj": {
                 "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Data.Interfaces\\FootballDataWrapper.Data.Interfaces.csproj"
-              },
-              "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Data\\FootballDataWrapper.Data.csproj": {
-                "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Data\\FootballDataWrapper.Data.csproj"
               }
             }
           }
@@ -289,6 +290,10 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",

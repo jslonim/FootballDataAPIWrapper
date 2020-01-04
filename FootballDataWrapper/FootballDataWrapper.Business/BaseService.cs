@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using AutoMapper;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -11,10 +12,11 @@ namespace FootballDataWrapper.Business
     public class BaseService
     {
         private string apiKey;
-
+        protected IMapper mapper;
         public BaseService(string _apiKey)
         {
             apiKey = _apiKey;
+            mapper = ObjectMapper.Mapper;
         }
 
         protected async Task<T> GetAsync<T>(string url)

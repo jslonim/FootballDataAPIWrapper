@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FootballDataWrapper.Business.DTO.ExternalService
+namespace FootballDataWrapper.Business.DTO
 {
     public class TeamDTO
     {

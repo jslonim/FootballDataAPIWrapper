@@ -2,16 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace FootballDataWrapper.Business.DTO
+namespace FootballDataWrapper.Data.Domain
 {
-    public class CompetitionDTO
+    public class Competition
     {
         public int Id { get; set; }
-
-        public AreaDTO Area {get;set;}
 
         public string Name { get; set; }
 
         public string Code { get; set; }
+
+        public string AreaName { get; set; }
     }
 }

@@ -8,6 +8,10 @@ namespace FootballDataWrapper.Data.Contexts
 {
     public class FootballDataContext : DbContext
     {
+        public FootballDataContext(DbContextOptionsBuilder optionsBuilder)
+        {
+
+        }
 
         public DbSet<Competition> Competition { get; set; }
 

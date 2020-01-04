@@ -27,8 +27,8 @@ namespace FootballDataWrapper.Business
 
         public void ImportLeague(string leagueCode)
         {
-
-            //Get Competition
+            //Competition
+            
             CompetitionDTO competition = this.GetAsync<CompetitionItemDTO>(getAllCompetitions).Result
                                              .Competitions.FirstOrDefault(x => x.Code == leagueCode);
             if (competition == null) 
@@ -41,19 +41,31 @@ namespace FootballDataWrapper.Business
             if (unitOfWork.Competitions.GetById(competition.Id) == null)
             {
                 throw new LeagueImportedException("League already imported");
-            }        
+            }
 
-            //Get Team   
+            unitOfWork.Competitions.Add(competitionModel);
+
+            //Teams   
+            
             List<TeamDTO> teams = this.GetAsync<CompetitionItemDTO>(getTeamByCompetition.Replace("{competitionId}", competition.Id.ToString())).Result.Teams;
 
             List<Team> teamModelList = this.mapper.Map<List<Team>>(teams);
 
+            foreach (Team teamModel in teamModelList)
+            {
+                if (unitOfWork.Teams.GetById(teamModel.Id) == null)
+                {
+                    unitOfWork.Teams.Add(teamModel);
+                }
+                unitOfWork.CompetitionTeams.Add(new CompetitionTeam() { CompetitionId = competitionModel.Id , TeamId = teamModel.Id});
+            }
 
 
-            //Get Players
+            //Players
+
             List<PlayerDTO> players = new List<PlayerDTO>();
 
-            foreach (var team in teams)
+            foreach (TeamDTO team in teams)
             {
                 List<PlayerDTO> squad = this.GetAsync<TeamItemDTO>(getPlayersByTeam.Replace("{teamId}", team.Id.ToString())).Result.Squad;
                 if (squad != null)
@@ -66,8 +78,9 @@ namespace FootballDataWrapper.Business
 
             List<Player> playerModelList = this.mapper.Map<List<Player>>(players);
 
-            //unitOfWork.Customers.Add(annoyingCustomer);
-            //unitOfWork.Complete();
+            unitOfWork.Players.AddRange(playerModelList);
+
+            unitOfWork.Complete();
 
         }
 

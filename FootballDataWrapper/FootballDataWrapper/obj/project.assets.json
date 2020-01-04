@@ -4692,6 +4692,54 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "FootballDataWrapper.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "FootballDataWrapper.Business.Interfaces": "1.0.0",
+          "FootballDataWrapper.Data": "1.0.0",
+          "FootballDataWrapper.Data.Interfaces": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FootballDataWrapper.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FootballDataWrapper.Business.dll": {}
+        }
+      },
+      "FootballDataWrapper.Business.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/FootballDataWrapper.Business.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FootballDataWrapper.Business.Interfaces.dll": {}
+        }
+      },
+      "FootballDataWrapper.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "FootballDataWrapper.Data.Interfaces": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FootballDataWrapper.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FootballDataWrapper.Data.dll": {}
+        }
+      },
+      "FootballDataWrapper.Data.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/FootballDataWrapper.Data.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FootballDataWrapper.Data.Interfaces.dll": {}
+        }
       }
     }
   },
@@ -12787,10 +12835,34 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "FootballDataWrapper.Business/1.0.0": {
+      "type": "project",
+      "path": "../FootballDataWrapper.Business/FootballDataWrapper.Business.csproj",
+      "msbuildProject": "../FootballDataWrapper.Business/FootballDataWrapper.Business.csproj"
+    },
+    "FootballDataWrapper.Business.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../FootballDataWrapper.Business.Interfaces/FootballDataWrapper.Business.Interfaces.csproj",
+      "msbuildProject": "../FootballDataWrapper.Business.Interfaces/FootballDataWrapper.Business.Interfaces.csproj"
+    },
+    "FootballDataWrapper.Data/1.0.0": {
+      "type": "project",
+      "path": "../FootballDataWrapper.Data/FootballDataWrapper.Data.csproj",
+      "msbuildProject": "../FootballDataWrapper.Data/FootballDataWrapper.Data.csproj"
+    },
+    "FootballDataWrapper.Data.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../FootballDataWrapper.Data.Interfaces/FootballDataWrapper.Data.Interfaces.csproj",
+      "msbuildProject": "../FootballDataWrapper.Data.Interfaces/FootballDataWrapper.Data.Interfaces.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "FootballDataWrapper.Business >= 1.0.0",
+      "FootballDataWrapper.Business.Interfaces >= 1.0.0",
+      "FootballDataWrapper.Data >= 1.0.0",
+      "FootballDataWrapper.Data.Interfaces >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
@@ -12823,7 +12895,20 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Business.Interfaces\\FootballDataWrapper.Business.Interfaces.csproj": {
+              "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Business.Interfaces\\FootballDataWrapper.Business.Interfaces.csproj"
+            },
+            "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Business\\FootballDataWrapper.Business.csproj": {
+              "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Business\\FootballDataWrapper.Business.csproj"
+            },
+            "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Data.Interfaces\\FootballDataWrapper.Data.Interfaces.csproj": {
+              "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Data.Interfaces\\FootballDataWrapper.Data.Interfaces.csproj"
+            },
+            "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Data\\FootballDataWrapper.Data.csproj": {
+              "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Data\\FootballDataWrapper.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,0 +1,406 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Tests\\FootballDataWrapper.Tests.csproj": {}
+  },
+  "projects": {
+    "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Business.Interfaces\\FootballDataWrapper.Business.Interfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Business.Interfaces\\FootballDataWrapper.Business.Interfaces.csproj",
+        "projectName": "FootballDataWrapper.Business.Interfaces",
+        "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Business.Interfaces\\FootballDataWrapper.Business.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\Casa\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Business.Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Casa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Business\\FootballDataWrapper.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Business\\FootballDataWrapper.Business.csproj",
+        "projectName": "FootballDataWrapper.Business",
+        "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Business\\FootballDataWrapper.Business.csproj",
+        "packagesPath": "C:\\Users\\Casa\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Casa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Business.Interfaces\\FootballDataWrapper.Business.Interfaces.csproj": {
+                "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Business.Interfaces\\FootballDataWrapper.Business.Interfaces.csproj"
+              },
+              "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Data.Interfaces\\FootballDataWrapper.Data.Interfaces.csproj": {
+                "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Data.Interfaces\\FootballDataWrapper.Data.Interfaces.csproj"
+              },
+              "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Data\\FootballDataWrapper.Data.csproj": {
+                "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Data\\FootballDataWrapper.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Data.Interfaces\\FootballDataWrapper.Data.Interfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Data.Interfaces\\FootballDataWrapper.Data.Interfaces.csproj",
+        "projectName": "FootballDataWrapper.Data.Interfaces",
+        "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Data.Interfaces\\FootballDataWrapper.Data.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\Casa\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Data.Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Casa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Data\\FootballDataWrapper.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Data\\FootballDataWrapper.Data.csproj",
+        "projectName": "FootballDataWrapper.Data",
+        "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Data\\FootballDataWrapper.Data.csproj",
+        "packagesPath": "C:\\Users\\Casa\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Casa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Data.Interfaces\\FootballDataWrapper.Data.Interfaces.csproj": {
+                "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Data.Interfaces\\FootballDataWrapper.Data.Interfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Tests\\FootballDataWrapper.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Tests\\FootballDataWrapper.Tests.csproj",
+        "projectName": "FootballDataWrapper.Tests",
+        "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Tests\\FootballDataWrapper.Tests.csproj",
+        "packagesPath": "C:\\Users\\Casa\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Casa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Business.Interfaces\\FootballDataWrapper.Business.Interfaces.csproj": {
+                "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Business.Interfaces\\FootballDataWrapper.Business.Interfaces.csproj"
+              },
+              "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Business\\FootballDataWrapper.Business.csproj": {
+                "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Business\\FootballDataWrapper.Business.csproj"
+              },
+              "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper\\FootballDataWrapper.csproj": {
+                "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper\\FootballDataWrapper.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.15.1, )"
+            },
+            "nunit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper\\FootballDataWrapper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper\\FootballDataWrapper.csproj",
+        "projectName": "FootballDataWrapper",
+        "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper\\FootballDataWrapper.csproj",
+        "packagesPath": "C:\\Users\\Casa\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Casa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Business.Interfaces\\FootballDataWrapper.Business.Interfaces.csproj": {
+                "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Business.Interfaces\\FootballDataWrapper.Business.Interfaces.csproj"
+              },
+              "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Business\\FootballDataWrapper.Business.csproj": {
+                "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Business\\FootballDataWrapper.Business.csproj"
+              },
+              "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Data.Interfaces\\FootballDataWrapper.Data.Interfaces.csproj": {
+                "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Data.Interfaces\\FootballDataWrapper.Data.Interfaces.csproj"
+              },
+              "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Data\\FootballDataWrapper.Data.csproj": {
+                "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootballDataWrapper\\FootballDataWrapper.Data\\FootballDataWrapper.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.1.10, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.0-rc4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

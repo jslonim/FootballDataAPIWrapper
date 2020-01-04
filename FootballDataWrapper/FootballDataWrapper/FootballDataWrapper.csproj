@@ -15,4 +15,11 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FootballDataWrapper.Business.Interfaces\FootballDataWrapper.Business.Interfaces.csproj" />
+    <ProjectReference Include="..\FootballDataWrapper.Business\FootballDataWrapper.Business.csproj" />
+    <ProjectReference Include="..\FootballDataWrapper.Data.Interfaces\FootballDataWrapper.Data.Interfaces.csproj" />
+    <ProjectReference Include="..\FootballDataWrapper.Data\FootballDataWrapper.Data.csproj" />
+  </ItemGroup>
+
 </Project>

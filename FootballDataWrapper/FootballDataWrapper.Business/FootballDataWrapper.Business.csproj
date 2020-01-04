@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FootballDataWrapper.Business.Interfaces\FootballDataWrapper.Business.Interfaces.csproj" />
+    <ProjectReference Include="..\FootballDataWrapper.Data.Interfaces\FootballDataWrapper.Data.Interfaces.csproj" />
+    <ProjectReference Include="..\FootballDataWrapper.Data\FootballDataWrapper.Data.csproj" />
+  </ItemGroup>
+
+</Project>

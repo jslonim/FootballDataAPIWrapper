@@ -1,0 +1,61 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "FootballDataWrapper.Business/1.0.0": {
+        "dependencies": {
+          "FootballDataWrapper.Business.Interfaces": "1.0.0",
+          "FootballDataWrapper.Data": "1.0.0",
+          "FootballDataWrapper.Data.Interfaces": "1.0.0"
+        },
+        "runtime": {
+          "FootballDataWrapper.Business.dll": {}
+        }
+      },
+      "FootballDataWrapper.Business.Interfaces/1.0.0": {
+        "runtime": {
+          "FootballDataWrapper.Business.Interfaces.dll": {}
+        }
+      },
+      "FootballDataWrapper.Data/1.0.0": {
+        "dependencies": {
+          "FootballDataWrapper.Data.Interfaces": "1.0.0"
+        },
+        "runtime": {
+          "FootballDataWrapper.Data.dll": {}
+        }
+      },
+      "FootballDataWrapper.Data.Interfaces/1.0.0": {
+        "runtime": {
+          "FootballDataWrapper.Data.Interfaces.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FootballDataWrapper.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FootballDataWrapper.Business.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FootballDataWrapper.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FootballDataWrapper.Data.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

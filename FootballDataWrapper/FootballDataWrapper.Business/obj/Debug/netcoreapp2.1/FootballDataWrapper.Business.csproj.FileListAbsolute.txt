@@ -1,0 +1,15 @@
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper.Business\bin\Debug\netcoreapp2.1\FootballDataWrapper.Business.deps.json
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper.Business\bin\Debug\netcoreapp2.1\FootballDataWrapper.Business.dll
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper.Business\bin\Debug\netcoreapp2.1\FootballDataWrapper.Business.pdb
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper.Business\obj\Debug\netcoreapp2.1\FootballDataWrapper.Business.AssemblyInfoInputs.cache
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper.Business\obj\Debug\netcoreapp2.1\FootballDataWrapper.Business.AssemblyInfo.cs
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper.Business\obj\Debug\netcoreapp2.1\FootballDataWrapper.Business.dll
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper.Business\obj\Debug\netcoreapp2.1\FootballDataWrapper.Business.pdb
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper.Business\bin\Debug\netcoreapp2.1\FootballDataWrapper.Business.Interfaces.dll
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper.Business\bin\Debug\netcoreapp2.1\FootballDataWrapper.Data.dll
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper.Business\bin\Debug\netcoreapp2.1\FootballDataWrapper.Data.Interfaces.dll
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper.Business\bin\Debug\netcoreapp2.1\FootballDataWrapper.Business.Interfaces.pdb
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper.Business\bin\Debug\netcoreapp2.1\FootballDataWrapper.Data.Interfaces.pdb
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper.Business\bin\Debug\netcoreapp2.1\FootballDataWrapper.Data.pdb
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper.Business\obj\Debug\netcoreapp2.1\FootballDataWrapper.Business.csprojAssemblyReference.cache
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper.Business\obj\Debug\netcoreapp2.1\FootballDataWrapper.Business.csproj.CopyComplete

@@ -3154,7 +3154,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "FootballDataWrapper.Business": "1.0.0",
           "FootballDataWrapper.Business.Interfaces": "1.0.0",
           "FootballDataWrapper.Data.Interfaces": "1.0.0",

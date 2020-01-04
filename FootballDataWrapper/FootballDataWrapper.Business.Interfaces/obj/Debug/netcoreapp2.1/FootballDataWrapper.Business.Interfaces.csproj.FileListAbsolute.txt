@@ -5,3 +5,4 @@ D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper.Bu
 D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper.Business.Interfaces\obj\Debug\netcoreapp2.1\FootballDataWrapper.Business.Interfaces.AssemblyInfo.cs
 D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper.Business.Interfaces\obj\Debug\netcoreapp2.1\FootballDataWrapper.Business.Interfaces.dll
 D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper.Business.Interfaces\obj\Debug\netcoreapp2.1\FootballDataWrapper.Business.Interfaces.pdb
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper.Business.Interfaces\obj\Debug\netcoreapp2.1\FootballDataWrapper.Business.Interfaces.csprojAssemblyReference.cache

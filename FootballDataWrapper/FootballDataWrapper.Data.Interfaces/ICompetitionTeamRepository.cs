@@ -1,10 +1,11 @@
-﻿using System;
+﻿using FootballDataWrapper.Data.Interfaces.Domain;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace FootballDataWrapper.Data.Interfaces
 {
-    public interface ICompetitionTeamRepository
+    public interface ICompetitionTeamRepository : IBaseRepository<CompetitionTeam>
     {
     }
 }

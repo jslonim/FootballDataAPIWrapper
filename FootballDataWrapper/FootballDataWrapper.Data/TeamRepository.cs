@@ -1,6 +1,6 @@
 ﻿using FootballDataWrapper.Data.Contexts;
-using FootballDataWrapper.Data.Domain;
 using FootballDataWrapper.Data.Interfaces;
+using FootballDataWrapper.Data.Interfaces.Domain;
 using System;
 using System.Collections.Generic;
 using System.Text;

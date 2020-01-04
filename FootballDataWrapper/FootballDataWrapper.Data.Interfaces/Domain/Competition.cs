@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace FootballDataWrapper.Data.Domain
+namespace FootballDataWrapper.Data.Interfaces.Domain
 {
     public class Competition
     {

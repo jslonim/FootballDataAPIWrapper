@@ -1,4 +1,4 @@
-﻿using FootballDataWrapper.Data.Domain;
+﻿using FootballDataWrapper.Data.Interfaces.Domain;
 using FootballDataWrapper.Data.Utilities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;

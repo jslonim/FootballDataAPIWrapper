@@ -1,0 +1,16 @@
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper\bin\Debug\netcoreapp2.1\appsettings.Development.json
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper\bin\Debug\netcoreapp2.1\appsettings.json
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper\bin\Debug\netcoreapp2.1\FootballDataWrapper.deps.json
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper\bin\Debug\netcoreapp2.1\FootballDataWrapper.runtimeconfig.json
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper\bin\Debug\netcoreapp2.1\FootballDataWrapper.runtimeconfig.dev.json
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper\bin\Debug\netcoreapp2.1\FootballDataWrapper.dll
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper\bin\Debug\netcoreapp2.1\FootballDataWrapper.pdb
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper\obj\Debug\netcoreapp2.1\FootballDataWrapper.csprojAssemblyReference.cache
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper\obj\Debug\netcoreapp2.1\FootballDataWrapper.RazorAssemblyInfo.cache
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper\obj\Debug\netcoreapp2.1\FootballDataWrapper.RazorAssemblyInfo.cs
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper\obj\Debug\netcoreapp2.1\FootballDataWrapper.AssemblyInfoInputs.cache
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper\obj\Debug\netcoreapp2.1\FootballDataWrapper.AssemblyInfo.cs
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper\obj\Debug\netcoreapp2.1\FootballDataWrapper.RazorTargetAssemblyInfo.cache
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper\obj\Debug\netcoreapp2.1\FootballDataWrapper.dll
+D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper\obj\Debug\netcoreapp2.1\FootballDataWrapper.pdb

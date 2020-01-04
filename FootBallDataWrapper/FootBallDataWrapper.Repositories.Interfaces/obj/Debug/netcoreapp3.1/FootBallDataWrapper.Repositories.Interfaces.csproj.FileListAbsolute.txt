@@ -1,7 +1,0 @@
-D:\Development\FootballDataAPIWrapper\FootBallDataWrapper\FootBallDataWrapper.Repositories.Interfaces\bin\Debug\netcoreapp3.1\FootBallDataWrapper.Repositories.Interfaces.deps.json
-D:\Development\FootballDataAPIWrapper\FootBallDataWrapper\FootBallDataWrapper.Repositories.Interfaces\bin\Debug\netcoreapp3.1\FootBallDataWrapper.Repositories.Interfaces.dll
-D:\Development\FootballDataAPIWrapper\FootBallDataWrapper\FootBallDataWrapper.Repositories.Interfaces\bin\Debug\netcoreapp3.1\FootBallDataWrapper.Repositories.Interfaces.pdb
-D:\Development\FootballDataAPIWrapper\FootBallDataWrapper\FootBallDataWrapper.Repositories.Interfaces\obj\Debug\netcoreapp3.1\FootBallDataWrapper.Repositories.Interfaces.AssemblyInfoInputs.cache
-D:\Development\FootballDataAPIWrapper\FootBallDataWrapper\FootBallDataWrapper.Repositories.Interfaces\obj\Debug\netcoreapp3.1\FootBallDataWrapper.Repositories.Interfaces.AssemblyInfo.cs
-D:\Development\FootballDataAPIWrapper\FootBallDataWrapper\FootBallDataWrapper.Repositories.Interfaces\obj\Debug\netcoreapp3.1\FootBallDataWrapper.Repositories.Interfaces.dll
-D:\Development\FootballDataAPIWrapper\FootBallDataWrapper\FootBallDataWrapper.Repositories.Interfaces\obj\Debug\netcoreapp3.1\FootBallDataWrapper.Repositories.Interfaces.pdb

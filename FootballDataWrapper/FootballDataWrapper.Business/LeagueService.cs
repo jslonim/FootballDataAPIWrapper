@@ -31,6 +31,18 @@ namespace FootballDataWrapper.Business
             List<TeamDTO> teams = this.GetAsync<CompetitionItemDTO>(getTeamByCompetition.Replace("{competitionId}", competition.Id.ToString())).Result.Teams;
 
             //Get Players
+            List <PlayerDTO> players = new List<PlayerDTO>();
+
+            foreach (var team in teams)
+            {
+                List<PlayerDTO> squad = this.GetAsync<TeamItemDTO>(getPlayersByTeam.Replace("{teamId}", team.Id.ToString())).Result.Squad;
+                if (squad != null) 
+                {
+                    squad.ForEach(x => x.TeamId = team.Id);
+                    players.AddRange(squad);
+                }
+               
+            }
         }
             
     }

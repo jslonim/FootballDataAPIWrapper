@@ -6,6 +6,8 @@ namespace FootballDataWrapper.Business.DTO.ExternalService
 {
     public class TeamDTO
     {
+        public int Id { get; set; }
+
         public string Name { get; set; }
 
         public string TLA { get; set; }

@@ -23,11 +23,12 @@ namespace FootballDataWrapper.Business
         {        
         }
 
-        public async void ImportLeague(string leagueCode) {
-            
+        public void ImportLeague(string leagueCode)
+        {
+
             //Get Competition
             CompetitionDTO competition = this.GetAsync<CompetitionItemDTO>(getAllCompetitions).Result
-                                             .Competitions.FirstOrDefault(x=> x.Code == leagueCode);
+                                             .Competitions.FirstOrDefault(x => x.Code == leagueCode);
 
             //Get Team   
             List<TeamDTO> teams = this.GetAsync<CompetitionItemDTO>(getTeamByCompetition.Replace("{competitionId}", competition.Id.ToString())).Result.Teams;
@@ -48,6 +49,6 @@ namespace FootballDataWrapper.Business
 
             Competition comp = this.mapper.Map<Competition>(competition);
         }
-            
+
     }
 }

@@ -5,10 +5,12 @@ using System.Threading.Tasks;
 using AutoMapper;
 using FootballDataWrapper.Business;
 using FootballDataWrapper.Business.Interfaces;
+using FootballDataWrapper.Data.Contexts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -34,6 +36,10 @@ namespace FootballDataWrapper
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Football API Wrapper", Version = "v1" });
             });
+
+            //Connection Strings
+            services.AddDbContext<FootballDataContext>(options =>
+                options.UseSqlServer(Configuration["Application:Local_DB_Connection_String"].ToString()));
 
             //Services
             services.AddScoped<ILeagueService, LeagueService>(

@@ -17,11 +17,11 @@ namespace FootballDataWrapper.Business
         protected IMapper mapper;
         protected UnitOfWork unitOfWork;
 
-        public BaseService(string _apiKey,string _connectionString)
+        public BaseService(string _apiKey)
         {
             apiKey = _apiKey;
             mapper = ObjectMapper.Mapper;
-            unitOfWork = new UnitOfWork(new FootballDataContext(_connectionString));
+            unitOfWork = new UnitOfWork(new FootballDataContext());
         }
 
         protected async Task<T> GetAsync<T>(string url)

@@ -2,6 +2,7 @@
 using FootballDataWrapper.Business.DTO;
 using FootballDataWrapper.Business.Interfaces;
 using FootballDataWrapper.Data;
+using FootballDataWrapper.Data.Contexts;
 using FootballDataWrapper.Data.Domain;
 using System;
 using System.Collections.Generic;
@@ -24,7 +25,7 @@ namespace FootballDataWrapper.Business
 
         #endregion
         
-        public LeagueService(string _apiKey,string _connectionString) : base(_apiKey, _connectionString)
+        public LeagueService(string _apiKey) : base(_apiKey)
         {        
         }
 

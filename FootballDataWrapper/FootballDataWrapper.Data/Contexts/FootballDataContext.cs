@@ -1,5 +1,7 @@
 ﻿using FootballDataWrapper.Data.Domain;
+using FootballDataWrapper.Data.Utilities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,10 +10,15 @@ namespace FootballDataWrapper.Data.Contexts
 {
     public class FootballDataContext : DbContext
     {
-        string connectionString;
-        public FootballDataContext(string _connectionString)
+
+        private readonly IOptions<ConnectionStringOption> _connStrOptions;
+        public FootballDataContext(IOptions<ConnectionStringOption> conStrOptions, DbContextOptions options) : base(options)
         {
-            connectionString = _connectionString;
+            _connStrOptions = conStrOptions;
+
+        }
+        public FootballDataContext() : base()
+        {
         }
 
         public DbSet<Competition> Competition { get; set; }
@@ -24,7 +31,7 @@ namespace FootballDataWrapper.Data.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(connectionString);
+            optionsBuilder.UseSqlServer(_connStrOptions.Value.ConStr);
         }
     }
 }

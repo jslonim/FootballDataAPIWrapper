@@ -1,0 +1,230 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Services\\FootBallDataWrapper.Services.csproj": {}
+  },
+  "projects": {
+    "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Repositories.Interfaces\\FootBallDataWrapper.Repositories.Interfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Repositories.Interfaces\\FootBallDataWrapper.Repositories.Interfaces.csproj",
+        "projectName": "FootBallDataWrapper.Repositories.Interfaces",
+        "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Repositories.Interfaces\\FootBallDataWrapper.Repositories.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\Casa\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Repositories.Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Casa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Repositories\\FootBallDataWrapper.Repositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Repositories\\FootBallDataWrapper.Repositories.csproj",
+        "projectName": "FootBallDataWrapper.Repositories",
+        "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Repositories\\FootBallDataWrapper.Repositories.csproj",
+        "packagesPath": "C:\\Users\\Casa\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Repositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Casa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Services.Interfaces\\FootBallDataWrapper.Services.Interfaces.csproj": {
+                "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Services.Interfaces\\FootBallDataWrapper.Services.Interfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Services.Interfaces\\FootBallDataWrapper.Services.Interfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Services.Interfaces\\FootBallDataWrapper.Services.Interfaces.csproj",
+        "projectName": "FootBallDataWrapper.Services.Interfaces",
+        "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Services.Interfaces\\FootBallDataWrapper.Services.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\Casa\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Services.Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Casa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Services\\FootBallDataWrapper.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Services\\FootBallDataWrapper.Services.csproj",
+        "projectName": "FootBallDataWrapper.Services",
+        "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Services\\FootBallDataWrapper.Services.csproj",
+        "packagesPath": "C:\\Users\\Casa\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Casa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Repositories.Interfaces\\FootBallDataWrapper.Repositories.Interfaces.csproj": {
+                "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Repositories.Interfaces\\FootBallDataWrapper.Repositories.Interfaces.csproj"
+              },
+              "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Repositories\\FootBallDataWrapper.Repositories.csproj": {
+                "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Repositories\\FootBallDataWrapper.Repositories.csproj"
+              },
+              "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Services.Interfaces\\FootBallDataWrapper.Services.Interfaces.csproj": {
+                "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Services.Interfaces\\FootBallDataWrapper.Services.Interfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

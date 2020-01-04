@@ -26,7 +26,7 @@ namespace FootBallDataWrapper
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddOpenApiDocument();
+            services.AddOpenApiDocument(document => document.Title = "FootBall Data Wrapper");
             services.AddControllers();
         }
 

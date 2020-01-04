@@ -1,0 +1,11 @@
+D:\Development\FootballDataAPIWrapper\FootBallDataWrapper\FootBallDataWrapper.Repositories\bin\Debug\netcoreapp3.1\FootBallDataWrapper.Repositories.deps.json
+D:\Development\FootballDataAPIWrapper\FootBallDataWrapper\FootBallDataWrapper.Repositories\bin\Debug\netcoreapp3.1\FootBallDataWrapper.Repositories.dll
+D:\Development\FootballDataAPIWrapper\FootBallDataWrapper\FootBallDataWrapper.Repositories\bin\Debug\netcoreapp3.1\FootBallDataWrapper.Repositories.pdb
+D:\Development\FootballDataAPIWrapper\FootBallDataWrapper\FootBallDataWrapper.Repositories\obj\Debug\netcoreapp3.1\FootBallDataWrapper.Repositories.csprojAssemblyReference.cache
+D:\Development\FootballDataAPIWrapper\FootBallDataWrapper\FootBallDataWrapper.Repositories\obj\Debug\netcoreapp3.1\FootBallDataWrapper.Repositories.AssemblyInfoInputs.cache
+D:\Development\FootballDataAPIWrapper\FootBallDataWrapper\FootBallDataWrapper.Repositories\obj\Debug\netcoreapp3.1\FootBallDataWrapper.Repositories.AssemblyInfo.cs
+D:\Development\FootballDataAPIWrapper\FootBallDataWrapper\FootBallDataWrapper.Repositories\obj\Debug\netcoreapp3.1\FootBallDataWrapper.Repositories.dll
+D:\Development\FootballDataAPIWrapper\FootBallDataWrapper\FootBallDataWrapper.Repositories\obj\Debug\netcoreapp3.1\FootBallDataWrapper.Repositories.pdb
+D:\Development\FootballDataAPIWrapper\FootBallDataWrapper\FootBallDataWrapper.Repositories\bin\Debug\netcoreapp3.1\FootBallDataWrapper.Services.Interfaces.dll
+D:\Development\FootballDataAPIWrapper\FootBallDataWrapper\FootBallDataWrapper.Repositories\bin\Debug\netcoreapp3.1\FootBallDataWrapper.Services.Interfaces.pdb
+D:\Development\FootballDataAPIWrapper\FootBallDataWrapper\FootBallDataWrapper.Repositories\obj\Debug\netcoreapp3.1\FootBallDataWrapper.Repositories.csproj.CopyComplete

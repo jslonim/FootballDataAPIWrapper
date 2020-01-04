@@ -24,6 +24,10 @@
     ".NETCoreApp,Version=v3.1": {
       "FootBallDataWrapper/1.0.0": {
         "dependencies": {
+          "FootBallDataWrapper.Repositories": "1.0.0",
+          "FootBallDataWrapper.Repositories.Interfaces": "1.0.0",
+          "FootBallDataWrapper.Services": "1.0.0",
+          "FootBallDataWrapper.Services.Interfaces": "1.0.0",
           "Microsoft.Extensions.Logging.Debug": "3.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.0",
           "NSwag.AspNetCore": "13.2.0",
@@ -2101,6 +2105,46 @@
           "System.Xml.ReaderWriter": "4.3.0",
           "System.Xml.XDocument": "4.3.0",
           "System.Xml.XPath": "4.0.1"
+        }
+      },
+      "FootBallDataWrapper.Repositories/1.0.0": {
+        "dependencies": {
+          "FootBallDataWrapper.Services.Interfaces": "1.0.0"
+        },
+        "runtime": {
+          "FootBallDataWrapper.Repositories.dll": {}
+        },
+        "compile": {
+          "FootBallDataWrapper.Repositories.dll": {}
+        }
+      },
+      "FootBallDataWrapper.Repositories.Interfaces/1.0.0": {
+        "runtime": {
+          "FootBallDataWrapper.Repositories.Interfaces.dll": {}
+        },
+        "compile": {
+          "FootBallDataWrapper.Repositories.Interfaces.dll": {}
+        }
+      },
+      "FootBallDataWrapper.Services/1.0.0": {
+        "dependencies": {
+          "FootBallDataWrapper.Repositories": "1.0.0",
+          "FootBallDataWrapper.Repositories.Interfaces": "1.0.0",
+          "FootBallDataWrapper.Services.Interfaces": "1.0.0"
+        },
+        "runtime": {
+          "FootBallDataWrapper.Services.dll": {}
+        },
+        "compile": {
+          "FootBallDataWrapper.Services.dll": {}
+        }
+      },
+      "FootBallDataWrapper.Services.Interfaces/1.0.0": {
+        "runtime": {
+          "FootBallDataWrapper.Services.Interfaces.dll": {}
+        },
+        "compile": {
+          "FootBallDataWrapper.Services.Interfaces.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -4929,6 +4973,26 @@
       "sha512": "sha512-FLhdYJx4331oGovQypQ8JIw2kEmNzCsjVOVYY/16kZTUoquZG85oVn7yUhBE2OZt1yGPSXAL0HTEfzjlbNpM7Q==",
       "path": "system.xml.xpath.xdocument/4.0.1",
       "hashPath": "system.xml.xpath.xdocument.4.0.1.nupkg.sha512"
+    },
+    "FootBallDataWrapper.Repositories/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FootBallDataWrapper.Repositories.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FootBallDataWrapper.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FootBallDataWrapper.Services.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
       "type": "referenceassembly",

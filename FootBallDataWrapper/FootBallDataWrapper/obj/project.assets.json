@@ -2655,6 +2655,54 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "FootBallDataWrapper.Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "FootBallDataWrapper.Services.Interfaces": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FootBallDataWrapper.Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FootBallDataWrapper.Repositories.dll": {}
+        }
+      },
+      "FootBallDataWrapper.Repositories.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/FootBallDataWrapper.Repositories.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FootBallDataWrapper.Repositories.Interfaces.dll": {}
+        }
+      },
+      "FootBallDataWrapper.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "FootBallDataWrapper.Repositories": "1.0.0",
+          "FootBallDataWrapper.Repositories.Interfaces": "1.0.0",
+          "FootBallDataWrapper.Services.Interfaces": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FootBallDataWrapper.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FootBallDataWrapper.Services.dll": {}
+        }
+      },
+      "FootBallDataWrapper.Services.Interfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/FootBallDataWrapper.Services.Interfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FootBallDataWrapper.Services.Interfaces.dll": {}
+        }
       }
     }
   },
@@ -8250,10 +8298,34 @@
         "system.xml.xpath.xdocument.4.0.1.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "FootBallDataWrapper.Repositories/1.0.0": {
+      "type": "project",
+      "path": "../FootBallDataWrapper.Repositories/FootBallDataWrapper.Repositories.csproj",
+      "msbuildProject": "../FootBallDataWrapper.Repositories/FootBallDataWrapper.Repositories.csproj"
+    },
+    "FootBallDataWrapper.Repositories.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../FootBallDataWrapper.Repositories.Interfaces/FootBallDataWrapper.Repositories.Interfaces.csproj",
+      "msbuildProject": "../FootBallDataWrapper.Repositories.Interfaces/FootBallDataWrapper.Repositories.Interfaces.csproj"
+    },
+    "FootBallDataWrapper.Services/1.0.0": {
+      "type": "project",
+      "path": "../FootBallDataWrapper.Services/FootBallDataWrapper.Services.csproj",
+      "msbuildProject": "../FootBallDataWrapper.Services/FootBallDataWrapper.Services.csproj"
+    },
+    "FootBallDataWrapper.Services.Interfaces/1.0.0": {
+      "type": "project",
+      "path": "../FootBallDataWrapper.Services.Interfaces/FootBallDataWrapper.Services.Interfaces.csproj",
+      "msbuildProject": "../FootBallDataWrapper.Services.Interfaces/FootBallDataWrapper.Services.Interfaces.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "FootBallDataWrapper.Repositories >= 1.0.0",
+      "FootBallDataWrapper.Repositories.Interfaces >= 1.0.0",
+      "FootBallDataWrapper.Services >= 1.0.0",
+      "FootBallDataWrapper.Services.Interfaces >= 1.0.0",
       "Microsoft.Extensions.Logging.Debug >= 3.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.0",
       "NSwag.AspNetCore >= 13.2.0"
@@ -8284,7 +8356,20 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Repositories.Interfaces\\FootBallDataWrapper.Repositories.Interfaces.csproj": {
+              "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Repositories.Interfaces\\FootBallDataWrapper.Repositories.Interfaces.csproj"
+            },
+            "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Repositories\\FootBallDataWrapper.Repositories.csproj": {
+              "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Repositories\\FootBallDataWrapper.Repositories.csproj"
+            },
+            "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Services.Interfaces\\FootBallDataWrapper.Services.Interfaces.csproj": {
+              "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Services.Interfaces\\FootBallDataWrapper.Services.Interfaces.csproj"
+            },
+            "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Services\\FootBallDataWrapper.Services.csproj": {
+              "projectPath": "D:\\Development\\FootballDataAPIWrapper\\FootBallDataWrapper\\FootBallDataWrapper.Services\\FootBallDataWrapper.Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

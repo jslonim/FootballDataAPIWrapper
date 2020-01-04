@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FootBallDataWrapper.Repositories.Interfaces\FootBallDataWrapper.Repositories.Interfaces.csproj" />
+    <ProjectReference Include="..\FootBallDataWrapper.Repositories\FootBallDataWrapper.Repositories.csproj" />
+    <ProjectReference Include="..\FootBallDataWrapper.Services.Interfaces\FootBallDataWrapper.Services.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

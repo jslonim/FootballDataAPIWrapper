@@ -5,7 +5,9 @@ using System.Threading.Tasks;
 using AutoMapper;
 using FootballDataWrapper.Business;
 using FootballDataWrapper.Business.Interfaces;
+using FootballDataWrapper.Data;
 using FootballDataWrapper.Data.Contexts;
+using FootballDataWrapper.Data.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -47,7 +49,10 @@ namespace FootballDataWrapper
             );
 
             //Repositories
-
+            services.AddScoped<ICompetitionRepository, CompetitionRepository>();
+            services.AddScoped<ICompetitionRepository, CompetitionRepository>();
+            services.AddScoped<ICompetitionRepository, CompetitionRepository>();
+            services.AddScoped<ICompetitionRepository, CompetitionRepository>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }

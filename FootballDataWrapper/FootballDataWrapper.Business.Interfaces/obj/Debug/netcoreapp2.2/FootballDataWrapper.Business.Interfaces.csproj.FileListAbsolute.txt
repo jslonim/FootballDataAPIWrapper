@@ -1,7 +1,6 @@
 D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper.Business.Interfaces\bin\Debug\netcoreapp2.2\FootballDataWrapper.Business.Interfaces.deps.json
 D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper.Business.Interfaces\bin\Debug\netcoreapp2.2\FootballDataWrapper.Business.Interfaces.dll
 D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper.Business.Interfaces\bin\Debug\netcoreapp2.2\FootballDataWrapper.Business.Interfaces.pdb
-D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper.Business.Interfaces\obj\Debug\netcoreapp2.2\FootballDataWrapper.Business.Interfaces.csprojAssemblyReference.cache
 D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper.Business.Interfaces\obj\Debug\netcoreapp2.2\FootballDataWrapper.Business.Interfaces.AssemblyInfoInputs.cache
 D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper.Business.Interfaces\obj\Debug\netcoreapp2.2\FootballDataWrapper.Business.Interfaces.AssemblyInfo.cs
 D:\Development\FootballDataAPIWrapper\FootballDataWrapper\FootballDataWrapper.Business.Interfaces\obj\Debug\netcoreapp2.2\FootballDataWrapper.Business.Interfaces.dll

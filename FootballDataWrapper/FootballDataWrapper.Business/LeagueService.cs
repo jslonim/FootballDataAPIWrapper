@@ -16,9 +16,13 @@ namespace FootballDataWrapper.Business
         private const string getTeamByCompetition = "https://api.football-data.org/v2/competitions/{competitionId}/teams";
         private const string getAllCompetitions = "https://api.football-data.org/v2/competitions";
         private const string getPlayersByTeam = "https://api.football-data.org/v2/teams/{teamId}";
-        
+
         #endregion
 
+        #region Repositories
+
+        #endregion
+        
         public LeagueService(string _apiKey) : base(_apiKey)
         {        
         }

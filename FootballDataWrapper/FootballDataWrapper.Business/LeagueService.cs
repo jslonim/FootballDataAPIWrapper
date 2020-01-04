@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using FootballDataWrapper.Business.DTO;
 using FootballDataWrapper.Business.Interfaces;
+using FootballDataWrapper.Data;
 using FootballDataWrapper.Data.Domain;
 using System;
 using System.Collections.Generic;
@@ -23,7 +24,7 @@ namespace FootballDataWrapper.Business
 
         #endregion
         
-        public LeagueService(string _apiKey) : base(_apiKey)
+        public LeagueService(string _apiKey,string _connectionString) : base(_apiKey, _connectionString)
         {        
         }
 
@@ -45,13 +46,19 @@ namespace FootballDataWrapper.Business
                 List<PlayerDTO> squad = this.GetAsync<TeamItemDTO>(getPlayersByTeam.Replace("{teamId}", team.Id.ToString())).Result.Squad;
                 if (squad != null)
                 {
+                    //Add team
                     squad.ForEach(x => x.TeamId = team.Id);
+                    //Add to players list
                     players.AddRange(squad);
                 }
 
             }
 
             Competition comp = this.mapper.Map<Competition>(competition);
+
+             //unitOfWork.Customers.Add(annoyingCustomer);
+             //unitOfWork.Complete();
+            
         }
 
     }

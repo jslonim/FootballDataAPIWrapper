@@ -8,9 +8,10 @@ namespace FootballDataWrapper.Data.Contexts
 {
     public class FootballDataContext : DbContext
     {
-        public FootballDataContext(DbContextOptionsBuilder optionsBuilder)
+        string connectionString;
+        public FootballDataContext(string _connectionString)
         {
-
+            connectionString = _connectionString;
         }
 
         public DbSet<Competition> Competition { get; set; }
@@ -21,9 +22,9 @@ namespace FootballDataWrapper.Data.Contexts
 
         public DbSet<Team> Team { get; set; }
 
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    optionsBuilder.UseSqlServer(@"Server=.\SQLEXPRESS;Database=SchoolDB;Trusted_Connection=True;");
-        //}
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer(connectionString);
+        }
     }
 }

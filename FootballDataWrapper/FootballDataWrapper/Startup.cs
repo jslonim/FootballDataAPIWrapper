@@ -39,13 +39,10 @@ namespace FootballDataWrapper
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Football API Wrapper", Version = "v1" });
             });
 
-            //Connection Strings
-            services.AddDbContext<FootballDataContext>(options =>
-                options.UseSqlServer(Configuration["Application:Local_DB_Connection_String"].ToString()));
-
             //Services
             services.AddScoped<ILeagueService, LeagueService>(
-                s => new LeagueService(Configuration["Application:ApiKey"].ToString()) 
+                s => new LeagueService(Configuration["Application:ApiKey"].ToString(), 
+                                       Configuration["Application:Local_DB_Connection_String"]) 
             );
 
             //Repositories

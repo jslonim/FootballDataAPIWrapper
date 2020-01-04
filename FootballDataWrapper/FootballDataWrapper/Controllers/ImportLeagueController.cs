@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FootballDataWrapper.Business;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,5 +12,18 @@ namespace FootballDataWrapper.Controllers
     [ApiController]
     public class ImportLeagueController : ControllerBase
     {
+        private LeagueService leagueService;
+
+        public ImportLeagueController(LeagueService _leagueService )
+        {
+            leagueService = _leagueService;
+        }            
+
+        // GET api/values/5
+        [HttpGet("{league}")]
+        public ActionResult<string> Get(string league)
+        {
+            return Ok();
+        }
     }
 }

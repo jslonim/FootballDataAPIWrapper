@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FootballDataWrapper.Business;
+using FootballDataWrapper.Business.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,6 +32,12 @@ namespace FootballDataWrapper
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Football API Wrapper", Version = "v1" });
             });
+
+            //Services
+            services.AddScoped<ILeagueService, LeagueService>();
+
+            //Repositories
+
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }

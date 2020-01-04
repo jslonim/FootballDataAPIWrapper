@@ -33,8 +33,11 @@ namespace FootballDataWrapper
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Football API Wrapper", Version = "v1" });
             });
 
+
             //Services
-            services.AddScoped<ILeagueService, LeagueService>();
+            services.AddScoped<ILeagueService, LeagueService>(
+                s => new LeagueService(Configuration["Application:ApiKey"].ToString()) 
+            );
 
             //Repositories
 

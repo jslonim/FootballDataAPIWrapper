@@ -10,7 +10,14 @@ namespace FootballDataWrapper.Business
 {
     public class BaseService
     {
-        protected async Task<T> GetAsync<T>(string url, string apiKey)
+        private string apiKey;
+
+        public BaseService(string _apiKey)
+        {
+            apiKey = _apiKey;
+        }
+
+        protected async Task<T> GetAsync<T>(string url)
         {
             using (var httpClient = new HttpClient())
             {

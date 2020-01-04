@@ -20,8 +20,8 @@ namespace FootballDataWrapper.Controllers
         }            
 
         // GET api/values/5
-        [HttpGet("{league}")]
-        public ActionResult<string> Get(string league)
+        [HttpGet("{leagueCode}")]
+        public ActionResult<string> Get(string leagueCode)
         {
             return Ok();
         }

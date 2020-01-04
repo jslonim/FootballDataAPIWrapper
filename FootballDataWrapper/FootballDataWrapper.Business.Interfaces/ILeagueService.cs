@@ -6,6 +6,6 @@ namespace FootballDataWrapper.Business.Interfaces
 {
     public interface ILeagueService
     {
-        void ImportLeauge(string league);
+        void ImportLeague(string leagueCode);
     }
 }

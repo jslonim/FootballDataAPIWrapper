@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\FootballDataWrapper.Business.Interfaces\FootballDataWrapper.Business.Interfaces.csproj" />
     <ProjectReference Include="..\FootballDataWrapper.Data.Interfaces\FootballDataWrapper.Data.Interfaces.csproj" />
     <ProjectReference Include="..\FootballDataWrapper.Data\FootballDataWrapper.Data.csproj" />

@@ -27,8 +27,7 @@ namespace FootballDataWrapper.Business
 
         public void ImportLeague(string leagueCode)
         {
-            //Competition
-            
+            //Competition           
             CompetitionDTO competition = this.GetAsync<CompetitionItemDTO>(getAllCompetitions).Result
                                              .Competitions.FirstOrDefault(x => x.Code == leagueCode);
             if (competition == null) 
@@ -45,8 +44,7 @@ namespace FootballDataWrapper.Business
 
             unitOfWork.Competitions.Add(competitionModel);
 
-            //Teams   
-            
+            //Teams           
             List<TeamDTO> teams = this.GetAsync<CompetitionItemDTO>(getTeamByCompetition.Replace("{competitionId}", competition.Id.ToString())).Result.Teams;
 
             List<Team> teamModelList = this.mapper.Map<List<Team>>(teams);
@@ -62,7 +60,6 @@ namespace FootballDataWrapper.Business
 
 
             //Players
-
             List<PlayerDTO> players = new List<PlayerDTO>();
 
             foreach (TeamDTO team in teams)
@@ -80,6 +77,7 @@ namespace FootballDataWrapper.Business
 
             unitOfWork.Players.AddRange(playerModelList);
 
+            //Execute transaction
             unitOfWork.Complete();
 
         }

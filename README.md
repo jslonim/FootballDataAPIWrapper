@@ -39,7 +39,7 @@ API Wrapper that uses the https://www.football-data.org/ API and exposes 2 GET E
   
   Linq
   
-  ## Patterns: 
+  ## Patterns 
   Unit of Work
   
   Generic Repository

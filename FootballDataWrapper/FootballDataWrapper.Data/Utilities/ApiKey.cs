@@ -5,12 +5,12 @@ using System.Text;
 
 namespace FootballDataWrapper.Data.Utilities
 {
-    public class ConnectionString : IConnectionString
+    public class ApiKey : IApiKey
     {
-        public ConnectionString(string connectionString)
+        public ApiKey(string _key)
         {
-            ConStr = connectionString;
+            Key = _key;
         }
-        public string ConStr { get; set; }
+        public string Key { get; set; }
     }
 }

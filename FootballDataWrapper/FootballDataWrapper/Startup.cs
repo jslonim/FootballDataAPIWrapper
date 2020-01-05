@@ -45,8 +45,8 @@ namespace FootballDataWrapper
             services.AddScoped<ILeagueService, LeagueService>();
             services.AddScoped<IPlayersService, PlayersService>();
 
-            services.AddScoped<IConnectionString, ConnectionString>(
-                s => new ConnectionString(Configuration["Application:ApiKey"].ToString())
+            services.AddScoped<IApiKey, ApiKey>(
+                s => new ApiKey(Configuration["Application:ApiKey"].ToString())
             );
 
             services.AddDbContext<FootballDataContext>

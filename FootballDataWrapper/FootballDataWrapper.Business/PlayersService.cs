@@ -14,7 +14,7 @@ namespace FootballDataWrapper.Business
 {
     public class PlayersService : BaseService, IPlayersService
     {
-        public PlayersService(IConnectionString _apiKey, FootballDataContext _context) : base(_apiKey.ConStr, _context)
+        public PlayersService(IApiKey _apiKey, FootballDataContext _context) : base(_apiKey.Key, _context)
         {
 
         }

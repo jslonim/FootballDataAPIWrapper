@@ -4,8 +4,8 @@ using System.Text;
 
 namespace FootballDataWrapper.Data.Interfaces.Utilities
 {
-    public interface IConnectionString
+    public interface IApiKey
     {
-        string ConStr { get; set; }
+        string Key { get; set; }
     }
 }

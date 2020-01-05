@@ -10,13 +10,13 @@ namespace FootballDataWrapper.Data
     {
         private readonly FootballDataContext _context;
 
-        public UnitOfWork(FootballDataContext context)
+        public UnitOfWork(FootballDataContext context, ICompetitionRepository competitions, IPlayerRepository players, ITeamRepository teams, ICompetitionTeamRepository competitionTeams )
         {
             _context = context;
-            Competitions = new CompetitionRepository(_context);
-            Players = new PlayerRepository(_context);
-            Teams = new TeamRepository(_context);
-            CompetitionTeams = new CompetitionTeamRepository(_context);
+            Competitions = competitions;
+            Players = players;
+            Teams = teams;
+            CompetitionTeams = competitionTeams;
         }
 
         public ICompetitionRepository Competitions { get; }

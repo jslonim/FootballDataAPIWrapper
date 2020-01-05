@@ -51,6 +51,7 @@ namespace FootballDataWrapper.Business
                 {
                     if (unitOfWork.Teams.GetById(teamModel.Id) == null)
                     {
+                        //Only leave in the list the teams that are not already in DB, so the players don't get added twice either.
                         unitOfWork.Teams.Add(teamModel);
                     }
                     unitOfWork.CompetitionTeams.Add(new CompetitionTeam() { CompetitionId = competitionModel.CompetitionId, TeamId = teamModel.TeamId });

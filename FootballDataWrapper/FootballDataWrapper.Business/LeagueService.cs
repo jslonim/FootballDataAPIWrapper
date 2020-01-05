@@ -13,7 +13,7 @@ using System.Text;
 
 namespace FootballDataWrapper.Business
 {
-    public class LeagueService: BaseService , ILeagueService
+    public class LeagueService : BaseService, ILeagueService
     {
         #region Constants
         //This is the only place that uses these addresses, in case it's needed anywhere else it can be moved.
@@ -21,9 +21,9 @@ namespace FootballDataWrapper.Business
         private const string getAllCompetitions = "https://api.football-data.org/v2/competitions";
         private const string getPlayersByTeam = "https://api.football-data.org/v2/teams/{teamId}";
         #endregion
-        
+
         public LeagueService(IConnectionString _apiKey, FootballDataContext _context) : base(_apiKey.ConStr, _context)
-        {        
+        {
         }
 
         public void ImportLeague(string leagueCode)
@@ -31,7 +31,7 @@ namespace FootballDataWrapper.Business
             //Competition           
             CompetitionDTO competition = this.GetAsync<CompetitionItemDTO>(getAllCompetitions).Result
                                              .Competitions.FirstOrDefault(x => x.Code == leagueCode);
-            if (competition == null) 
+            if (competition == null)
             {
                 throw new LeagueNotFoundException("Not found");
             }
@@ -46,38 +46,41 @@ namespace FootballDataWrapper.Business
             unitOfWork.Competitions.Add(competitionModel);
 
             //Teams           
+
             List<TeamDTO> teams = this.GetAsync<CompetitionItemDTO>(getTeamByCompetition.Replace("{competitionId}", competition.Id.ToString())).Result.Teams;
 
-            List<Team> teamModelList = this.mapper.Map<List<Team>>(teams);
-
-            foreach (Team teamModel in teamModelList)
+            if (teams.Count > 0)
             {
-                if (unitOfWork.Teams.GetById(teamModel.Id) == null)
+                List<Team> teamModelList = this.mapper.Map<List<Team>>(teams);
+
+                foreach (Team teamModel in teamModelList)
                 {
-                    unitOfWork.Teams.Add(teamModel);
-                }
-                unitOfWork.CompetitionTeams.Add(new CompetitionTeam() { CompetitionId = competitionModel.CompetitionId , TeamId = teamModel.TeamId});
-            }
-
-
-            //Players
-            List<PlayerDTO> players = new List<PlayerDTO>();
-
-            foreach (TeamDTO team in teams)
-            {
-                List<PlayerDTO> squad = this.GetAsync<TeamItemDTO>(getPlayersByTeam.Replace("{teamId}", team.Id.ToString())).Result.Squad;
-                if (squad != null)
-                {
-                    squad.ForEach(x => x.TeamId = team.Id);
-                    players.AddRange(squad);
+                    if (unitOfWork.Teams.GetById(teamModel.Id) == null)
+                    {
+                        unitOfWork.Teams.Add(teamModel);
+                    }
+                    unitOfWork.CompetitionTeams.Add(new CompetitionTeam() { CompetitionId = competitionModel.CompetitionId, TeamId = teamModel.TeamId });
                 }
 
+
+                //Players
+                List<PlayerDTO> players = new List<PlayerDTO>();
+
+                foreach (TeamDTO team in teams)
+                {
+                    List<PlayerDTO> squad = this.GetAsync<TeamItemDTO>(getPlayersByTeam.Replace("{teamId}", team.Id.ToString())).Result.Squad;
+                    if (squad != null && squad.Count > 0)
+                    {
+                        squad.ForEach(x => x.TeamId = team.Id);
+                        players.AddRange(squad);
+                    }
+
+                }
+
+                List<Player> playerModelList = this.mapper.Map<List<Player>>(players);
+
+                unitOfWork.Players.AddRange(playerModelList);
             }
-
-            List<Player> playerModelList = this.mapper.Map<List<Player>>(players);
-
-            unitOfWork.Players.AddRange(playerModelList);
-
             //Execute transaction
             this.CompleteTransaction();
 

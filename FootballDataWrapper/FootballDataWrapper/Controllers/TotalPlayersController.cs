@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using FootballDataWrapper.Business.DTO;
+using FootballDataWrapper.Business.Exceptions;
 using FootballDataWrapper.Business.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -22,9 +23,18 @@ namespace FootballDataWrapper.Controllers
         [HttpGet("{leagueCode}")]
         public ActionResult<string> Get(string leagueCode) 
         {
-            TotalPlayersDTO result = new TotalPlayersDTO();
-            result.Total = playerService.GetTotalPlayers(leagueCode);
-            return Ok(result);
+            try
+            {
+                TotalPlayersDTO result = new TotalPlayersDTO();
+                result.Total = playerService.GetTotalPlayers(leagueCode);
+                return Ok(result);
+            }
+            catch (LeagueNotFoundException)
+            {
+
+                return NotFound("Not found");
+            }
+
         }
     }
 }

@@ -2,6 +2,7 @@
 using FootballDataWrapper.Business.DTO;
 using FootballDataWrapper.Business.Exceptions;
 using FootballDataWrapper.Business.Interfaces;
+using FootballDataWrapper.Business.Utils;
 using FootballDataWrapper.Data;
 using FootballDataWrapper.Data.Contexts;
 using FootballDataWrapper.Data.Interfaces.Domain;
@@ -15,13 +16,6 @@ namespace FootballDataWrapper.Business
 {
     public class LeagueService : BaseService, ILeagueService
     {
-        #region Constants
-        //This is the only place that uses these addresses, in case it's needed anywhere else it can be moved.
-        private const string getTeamByCompetition = "https://api.football-data.org/v2/competitions/{competitionId}/teams";
-        private const string getAllCompetitions = "https://api.football-data.org/v2/competitions";
-        private const string getPlayersByTeam = "https://api.football-data.org/v2/teams/{teamId}";
-        #endregion
-
         public LeagueService(IConnectionString _apiKey, FootballDataContext _context) : base(_apiKey.ConStr, _context)
         {
         }
@@ -29,7 +23,7 @@ namespace FootballDataWrapper.Business
         public void ImportLeague(string leagueCode)
         {
             //Competition           
-            CompetitionDTO competition = this.GetAsync<CompetitionItemDTO>(getAllCompetitions).Result
+            CompetitionDTO competition = this.GetAsync<CompetitionItemDTO>(API_URL.GetAllCompetitions).Result
                                              .Competitions.FirstOrDefault(x => x.Code == leagueCode);
             if (competition == null)
             {
@@ -47,7 +41,7 @@ namespace FootballDataWrapper.Business
 
             //Teams           
 
-            List<TeamDTO> teams = this.GetAsync<CompetitionItemDTO>(getTeamByCompetition.Replace("{competitionId}", competition.Id.ToString())).Result.Teams;
+            List<TeamDTO> teams = this.GetAsync<CompetitionItemDTO>(API_URL.GetTeamByCompetition.Replace("{competitionId}", competition.Id.ToString())).Result.Teams;
 
             if (teams.Count > 0)
             {
@@ -68,7 +62,7 @@ namespace FootballDataWrapper.Business
 
                 foreach (TeamDTO team in teams)
                 {
-                    List<PlayerDTO> squad = this.GetAsync<TeamItemDTO>(getPlayersByTeam.Replace("{teamId}", team.Id.ToString())).Result.Squad;
+                    List<PlayerDTO> squad = this.GetAsync<TeamItemDTO>(API_URL.GetPlayersByTeam.Replace("{teamId}", team.Id.ToString())).Result.Squad;
                     if (squad != null && squad.Count > 0)
                     {
                         squad.ForEach(x => x.TeamId = team.Id);

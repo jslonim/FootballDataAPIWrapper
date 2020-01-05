@@ -28,16 +28,16 @@ namespace FootballDataWrapper.Business
 
         protected void CompleteTransaction() 
         {
-            //try
-            //{
+            try
+            {
                 unitOfWork.Complete();
-            //}
-            //catch (Exception)
-            //{
+            }
+            catch (Exception)
+            {
 
-            //    throw new ConectivityException("Server Error");
-            //}
-            
+                throw new ConectivityException("Server Error");
+            }
+
         }
 
         protected async Task<T> GetAsync<T>(string url)

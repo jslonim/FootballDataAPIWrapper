@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballDataWrapper", "FootballDataWrapper\FootballDataWrapper.csproj", "{821FD6AC-21DE-488F-B00A-61AAAC47C47E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FootballDataWrapper", "FootballDataWrapper\FootballDataWrapper.csproj", "{821FD6AC-21DE-488F-B00A-61AAAC47C47E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballDataWrapper.Business", "FootballDataWrapper.Business\FootballDataWrapper.Business.csproj", "{44A5DDC3-11D7-4F74-B637-F73188159541}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FootballDataWrapper.Business", "FootballDataWrapper.Business\FootballDataWrapper.Business.csproj", "{44A5DDC3-11D7-4F74-B637-F73188159541}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballDataWrapper.Business.Interfaces", "FootballDataWrapper.Business.Interfaces\FootballDataWrapper.Business.Interfaces.csproj", "{287C73C9-2009-4F28-A16E-BE46FECD3A59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FootballDataWrapper.Business.Interfaces", "FootballDataWrapper.Business.Interfaces\FootballDataWrapper.Business.Interfaces.csproj", "{287C73C9-2009-4F28-A16E-BE46FECD3A59}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business Layer", "Business Layer", "{BCE3ADFB-F5D4-4E32-9C70-2716D257D002}"
 EndProject
@@ -15,13 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{0B1C4CE7-A55
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data Layer", "Data Layer", "{3D757FD5-21F2-4943-9065-93243409BB90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballDataWrapper.Data", "FootballDataWrapper.Data\FootballDataWrapper.Data.csproj", "{CF8B3A64-6F17-4755-BBDF-E821BEA206EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FootballDataWrapper.Data", "FootballDataWrapper.Data\FootballDataWrapper.Data.csproj", "{CF8B3A64-6F17-4755-BBDF-E821BEA206EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballDataWrapper.Data.Interfaces", "FootballDataWrapper.Data.Interfaces\FootballDataWrapper.Data.Interfaces.csproj", "{92AF7FC0-DA70-401C-B3CC-52BE900C882E}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0B2FA9F0-359E-48C7-A45C-EABD4EAE4D12}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FootballDataWrapper.Tests", "FootballDataWrapper.Tests\FootballDataWrapper.Tests.csproj", "{90AB5521-6CF6-4E61-B52D-FBB432CC0A47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FootballDataWrapper.Data.Interfaces", "FootballDataWrapper.Data.Interfaces\FootballDataWrapper.Data.Interfaces.csproj", "{92AF7FC0-DA70-401C-B3CC-52BE900C882E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,10 +45,6 @@ Global
 		{92AF7FC0-DA70-401C-B3CC-52BE900C882E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92AF7FC0-DA70-401C-B3CC-52BE900C882E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92AF7FC0-DA70-401C-B3CC-52BE900C882E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{90AB5521-6CF6-4E61-B52D-FBB432CC0A47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{90AB5521-6CF6-4E61-B52D-FBB432CC0A47}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{90AB5521-6CF6-4E61-B52D-FBB432CC0A47}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{90AB5521-6CF6-4E61-B52D-FBB432CC0A47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,7 +55,6 @@ Global
 		{287C73C9-2009-4F28-A16E-BE46FECD3A59} = {BCE3ADFB-F5D4-4E32-9C70-2716D257D002}
 		{CF8B3A64-6F17-4755-BBDF-E821BEA206EB} = {3D757FD5-21F2-4943-9065-93243409BB90}
 		{92AF7FC0-DA70-401C-B3CC-52BE900C882E} = {3D757FD5-21F2-4943-9065-93243409BB90}
-		{90AB5521-6CF6-4E61-B52D-FBB432CC0A47} = {0B2FA9F0-359E-48C7-A45C-EABD4EAE4D12}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5FF043C5-4846-40F6-9793-66FAAF9E2823}

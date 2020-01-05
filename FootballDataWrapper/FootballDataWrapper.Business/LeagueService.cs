@@ -39,9 +39,9 @@ namespace FootballDataWrapper.Business
 
             unitOfWork.Competitions.Add(competitionModel);
 
-            //Teams           
-
-            List<TeamDTO> teams = this.GetAsync<CompetitionItemDTO>(API_URL.GetTeamByCompetition.Replace("{competitionId}", competition.Id.ToString())).Result.Teams;
+            //Team and Players
+            List<TeamDTO> teams = this.GetAsync<CompetitionItemDTO>(API_URL.GetTeamsByCompetition.Replace("{competitionId}", competition.Id.ToString())).Result.Teams;
+            List<PlayerDTO> players = new List<PlayerDTO>();
 
             if (teams.Count > 0)
             {
@@ -49,36 +49,32 @@ namespace FootballDataWrapper.Business
 
                 foreach (Team teamModel in teamModelList)
                 {
+ 
+                    unitOfWork.CompetitionTeams.Add(new CompetitionTeam() { CompetitionId = competitionModel.CompetitionId, TeamId = teamModel.TeamId });
+
                     if (unitOfWork.Teams.GetById(teamModel.Id) == null)
                     {
                         //Only leave in the list the teams that are not already in DB, so the players don't get added twice either.
                         unitOfWork.Teams.Add(teamModel);
+
+                        List<PlayerDTO> squad = this.GetAsync<TeamItemDTO>(API_URL.GetPlayersByTeam.Replace("{teamId}", teamModel.TeamId.ToString())).Result.Squad;
+
+                        if (squad != null && squad.Count > 0)
+                        {
+                            squad.ForEach(x => x.TeamId = teamModel.TeamId);
+                            players.AddRange(squad);
+                        }                       
                     }
-                    unitOfWork.CompetitionTeams.Add(new CompetitionTeam() { CompetitionId = competitionModel.CompetitionId, TeamId = teamModel.TeamId });
                 }
-
-
-                //Players
-                List<PlayerDTO> players = new List<PlayerDTO>();
-
-                foreach (TeamDTO team in teams)
+                if (players.Count() > 1)
                 {
-                    List<PlayerDTO> squad = this.GetAsync<TeamItemDTO>(API_URL.GetPlayersByTeam.Replace("{teamId}", team.Id.ToString())).Result.Squad;
-                    if (squad != null && squad.Count > 0)
-                    {
-                        squad.ForEach(x => x.TeamId = team.Id);
-                        players.AddRange(squad);
-                    }
-
+                    List<Player> playerModelList = this.mapper.Map<List<Player>>(players);
+                    unitOfWork.Players.AddRange(playerModelList);
                 }
-
-                List<Player> playerModelList = this.mapper.Map<List<Player>>(players);
-
-                unitOfWork.Players.AddRange(playerModelList);
+                
             }
             //Execute transaction
             this.CompleteTransaction();
-
         }
 
     }

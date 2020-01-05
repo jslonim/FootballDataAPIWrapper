@@ -8,6 +8,7 @@ using FootballDataWrapper.Business.Interfaces;
 using FootballDataWrapper.Data;
 using FootballDataWrapper.Data.Contexts;
 using FootballDataWrapper.Data.Interfaces;
+using FootballDataWrapper.Data.Interfaces.Utilities;
 using FootballDataWrapper.Data.Utilities;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -41,9 +42,14 @@ namespace FootballDataWrapper
             });
 
             //Services
-            services.AddScoped<ILeagueService, LeagueService>(
-                s => new LeagueService(Configuration["Application:ApiKey"].ToString()
-                                       )
+            services.AddScoped<ILeagueService, LeagueService>();
+
+            services.AddScoped<IConnectionString, ConnectionString>(
+                s => new ConnectionString(Configuration["Application:ApiKey"].ToString())
+            );
+
+            services.AddDbContext<FootballDataContext>
+                (options => options.UseSqlServer(Configuration["Application:FootBallBD_ConnectionString"].ToString())
             );
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);

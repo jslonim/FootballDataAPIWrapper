@@ -10,7 +10,7 @@ namespace FootballDataWrapper.Data.Contexts
 {
     public class FootballDataContext : DbContext
     {
-        public FootballDataContext() : base()
+        public FootballDataContext(DbContextOptions options) : base(options)
         {
         }
 
@@ -22,9 +22,5 @@ namespace FootballDataWrapper.Data.Contexts
 
         public DbSet<Team> Team { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-IS62AT0\\SQLEXPRESS;Database=FootballDataDB;Trusted_Connection=True;");
-        }
     }
 }

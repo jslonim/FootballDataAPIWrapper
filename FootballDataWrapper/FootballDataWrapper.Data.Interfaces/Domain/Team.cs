@@ -20,7 +20,7 @@ namespace FootballDataWrapper.Data.Interfaces.Domain
         [MaxLength(100)]
         public string TLA { get; set; }
 
-        [MaxLength(150)]
+        [MaxLength(100)]
         public string ShortName { get; set; }
 
         [MaxLength(100)]

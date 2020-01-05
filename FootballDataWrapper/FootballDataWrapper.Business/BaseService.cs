@@ -18,11 +18,11 @@ namespace FootballDataWrapper.Business
         protected IMapper mapper;
         protected UnitOfWork unitOfWork;
 
-        public BaseService(string _apiKey)
+        public BaseService(string _apiKey, FootballDataContext context)
         {
             apiKey = _apiKey;
             mapper = ObjectMapper.Mapper;
-            unitOfWork = new UnitOfWork(new FootballDataContext());
+            unitOfWork = new UnitOfWork(context);
         }
 
 

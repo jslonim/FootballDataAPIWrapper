@@ -5,6 +5,7 @@ using FootballDataWrapper.Business.Interfaces;
 using FootballDataWrapper.Data;
 using FootballDataWrapper.Data.Contexts;
 using FootballDataWrapper.Data.Interfaces.Domain;
+using FootballDataWrapper.Data.Interfaces.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +22,7 @@ namespace FootballDataWrapper.Business
         private const string getPlayersByTeam = "https://api.football-data.org/v2/teams/{teamId}";
         #endregion
         
-        public LeagueService(string _apiKey) : base(_apiKey)
+        public LeagueService(IConnectionString _apiKey, FootballDataContext _context) : base(_apiKey.ConStr, _context)
         {        
         }
 

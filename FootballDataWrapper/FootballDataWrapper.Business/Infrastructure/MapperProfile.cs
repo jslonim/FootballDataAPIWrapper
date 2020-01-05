@@ -11,7 +11,15 @@ namespace FootballDataWrapper.Business
     {
         public MapperProfile()
         {
-            CreateMap<CompetitionDTO, Competition>();
+            CreateMap<CompetitionDTO, Competition>()
+                .ForMember(d => d.CompetitionId, o => o.MapFrom(c => c.Id))
+                .ForMember(d => d.Id, o => o.MapFrom(c => 0) );
+            CreateMap<TeamDTO, Team>()
+                .ForMember(d => d.TeamId, o => o.MapFrom(c => c.Id))
+                .ForMember(d => d.Id, o => o.MapFrom(c => 0));
+            CreateMap<PlayerDTO, Player>()
+                .ForMember(d => d.PlayerId, o => o.MapFrom(c => c.Id))
+                .ForMember(d => d.Id, o => o.MapFrom(c => 0));
         }
     }
 

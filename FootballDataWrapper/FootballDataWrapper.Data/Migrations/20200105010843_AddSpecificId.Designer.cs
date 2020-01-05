@@ -4,14 +4,16 @@ using FootballDataWrapper.Data.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FootballDataWrapper.Data.Migrations
 {
     [DbContext(typeof(FootballDataContext))]
-    partial class FootballDataContextModelSnapshot : ModelSnapshot
+    [Migration("20200105010843_AddSpecificId")]
+    partial class AddSpecificId
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -67,18 +69,21 @@ namespace FootballDataWrapper.Data.Migrations
                     b.Property<string>("CountryOfBirth")
                         .HasMaxLength(100);
 
-                    b.Property<DateTime?>("DateOfBirth");
+                    b.Property<DateTime?>("DateOfBirth")
+                        .IsRequired();
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(200);
 
                     b.Property<string>("Nationality")
+                        .IsRequired()
                         .HasMaxLength(100);
 
                     b.Property<int>("PlayerId");
 
                     b.Property<string>("Position")
+                        .IsRequired()
                         .HasMaxLength(50);
 
                     b.Property<int>("TeamId");
@@ -98,6 +103,7 @@ namespace FootballDataWrapper.Data.Migrations
                         .HasMaxLength(100);
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasMaxLength(75);
 
                     b.Property<string>("Name")
@@ -108,6 +114,7 @@ namespace FootballDataWrapper.Data.Migrations
                         .HasMaxLength(150);
 
                     b.Property<string>("TLA")
+                        .IsRequired()
                         .HasMaxLength(100);
 
                     b.Property<int>("TeamId");

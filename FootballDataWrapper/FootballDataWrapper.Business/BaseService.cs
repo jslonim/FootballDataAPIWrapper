@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using FootballDataWrapper.Business.Exceptions;
 using FootballDataWrapper.Data;
 using FootballDataWrapper.Data.Contexts;
 using Newtonsoft.Json;
@@ -24,17 +25,41 @@ namespace FootballDataWrapper.Business
             unitOfWork = new UnitOfWork(new FootballDataContext());
         }
 
+
+        protected void CompleteTransaction() 
+        {
+            //try
+            //{
+                unitOfWork.Complete();
+            //}
+            //catch (Exception)
+            //{
+
+            //    throw new ConectivityException("Server Error");
+            //}
+            
+        }
+
         protected async Task<T> GetAsync<T>(string url)
         {
-            using (var httpClient = new HttpClient())
+            try
             {
-                httpClient.DefaultRequestHeaders.Add("X-Auth-Token", apiKey);
-                using (var response = await httpClient.GetAsync(url))
+                using (var httpClient = new HttpClient())
                 {
-                    string apiResponse = await response.Content.ReadAsStringAsync();
-                    return JsonConvert.DeserializeObject<T>(apiResponse);
+                    httpClient.DefaultRequestHeaders.Add("X-Auth-Token", apiKey);
+                    using (var response = await httpClient.GetAsync(url))
+                    {
+                        string apiResponse = await response.Content.ReadAsStringAsync();
+                        return JsonConvert.DeserializeObject<T>(apiResponse);
+                    }
                 }
             }
+            catch (Exception)
+            {
+
+                throw new ConectivityException("Server Error");
+            }
+
         }
     }
 }

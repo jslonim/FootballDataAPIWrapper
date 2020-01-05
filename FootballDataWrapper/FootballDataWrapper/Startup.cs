@@ -40,19 +40,11 @@ namespace FootballDataWrapper
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Football API Wrapper", Version = "v1" });
             });
 
-            services.Configure<ConnectionStringOption>(options =>
-            {
-                options.ConStr = Configuration["Application:Local_DB_Connection_String"];
-            });
-
-            services.AddDbContext<FootballDataContext>();
             //Services
             services.AddScoped<ILeagueService, LeagueService>(
                 s => new LeagueService(Configuration["Application:ApiKey"].ToString()
-                                       ) 
+                                       )
             );
-
-            //Configuration["Application:Local_DB_Connection_String"]
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }

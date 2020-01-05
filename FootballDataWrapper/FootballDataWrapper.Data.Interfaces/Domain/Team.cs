@@ -9,13 +9,15 @@ namespace FootballDataWrapper.Data.Interfaces.Domain
     {
         [Key]
         public int Id { get; set; }
+        
+        [Required]
+        public int TeamId { get; set; } 
 
         [MaxLength(200)]
         [Required]
         public string Name { get; set; }
 
         [MaxLength(100)]
-        [Required]
         public string TLA { get; set; }
 
         [MaxLength(150)]
@@ -25,7 +27,6 @@ namespace FootballDataWrapper.Data.Interfaces.Domain
         public string AreaName { get; set; }
 
         [MaxLength(75)]
-        [Required]
         public string Email { get; set; }
     }
 }

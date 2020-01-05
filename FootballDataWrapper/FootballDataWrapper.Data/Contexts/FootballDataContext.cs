@@ -10,13 +10,6 @@ namespace FootballDataWrapper.Data.Contexts
 {
     public class FootballDataContext : DbContext
     {
-
-        private readonly IOptions<ConnectionStringOption> _connStrOptions;
-        public FootballDataContext(IOptions<ConnectionStringOption> conStrOptions, DbContextOptions options) : base(options)
-        {
-            _connStrOptions = conStrOptions;
-
-        }
         public FootballDataContext() : base()
         {
         }
@@ -31,7 +24,7 @@ namespace FootballDataWrapper.Data.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(_connStrOptions.Value.ConStr);
+            optionsBuilder.UseSqlServer("Server=DESKTOP-IS62AT0\\SQLEXPRESS;Database=FootballDataDB;Trusted_Connection=True;");
         }
     }
 }

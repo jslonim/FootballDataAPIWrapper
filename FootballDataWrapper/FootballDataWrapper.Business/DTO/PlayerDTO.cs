@@ -6,7 +6,7 @@ namespace FootballDataWrapper.Business.DTO
 {
     public class PlayerDTO
     {
-        int Id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Position { get; set; }
         public DateTime? DateOfBirth { get; set; }

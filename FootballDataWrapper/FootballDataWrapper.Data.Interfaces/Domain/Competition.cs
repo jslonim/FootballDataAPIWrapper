@@ -9,6 +9,8 @@ namespace FootballDataWrapper.Data.Interfaces.Domain
     {
         [Key]
         public int Id { get; set; }
+        [Required]
+        public int CompetitionId { get; set; }
 
         [MaxLength(200)]
         [Required]

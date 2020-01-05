@@ -37,7 +37,7 @@ namespace FootballDataWrapper.Business
 
             Competition competitionModel = this.mapper.Map<Competition>(competition);
 
-            if (unitOfWork.Competitions.GetById(competition.Id) == null)
+            if (unitOfWork.Competitions.GetById(competition.Id) != null)
             {
                 throw new LeagueImportedException("League already imported");
             }
@@ -55,7 +55,7 @@ namespace FootballDataWrapper.Business
                 {
                     unitOfWork.Teams.Add(teamModel);
                 }
-                unitOfWork.CompetitionTeams.Add(new CompetitionTeam() { CompetitionId = competitionModel.Id , TeamId = teamModel.Id});
+                unitOfWork.CompetitionTeams.Add(new CompetitionTeam() { CompetitionId = competitionModel.CompetitionId , TeamId = teamModel.TeamId});
             }
 
 
@@ -78,7 +78,7 @@ namespace FootballDataWrapper.Business
             unitOfWork.Players.AddRange(playerModelList);
 
             //Execute transaction
-            unitOfWork.Complete();
+            this.CompleteTransaction();
 
         }
 

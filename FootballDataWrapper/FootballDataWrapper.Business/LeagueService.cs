@@ -23,8 +23,8 @@ namespace FootballDataWrapper.Business
         public void ImportLeague(string leagueCode)
         {
             //Competition           
-            CompetitionDTO competition = this.GetAsync<CompetitionItemDTO>(API_URL.GetAllCompetitions).Result
-                                             .Competitions.FirstOrDefault(x => x.Code == leagueCode);
+            CompetitionDTO competition = this.GetAsync<CompetitionItemDTO>(API_URL.GetAllCompetitions).Result.Competitions
+                                             .FirstOrDefault(x => x.Code == leagueCode);
             if (competition == null)
             {
                 throw new LeagueNotFoundException("Not found");

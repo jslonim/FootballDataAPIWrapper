@@ -1,6 +1,8 @@
 # FootballDataAPIWrapper
 
-API Wrapper that uses the https://www.football-data.org/ API and exposes 2 GET Endpoints:
+API Wrapper that uses the https://www.football-data.org/ 
+
+Endpoints:
 
 ### /import-league/{leagueCode}
 

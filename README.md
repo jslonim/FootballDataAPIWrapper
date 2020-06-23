@@ -2,7 +2,7 @@
 
 API Wrapper that uses the https://www.football-data.org/ 
 
-Endpoints:
+## Endpoints:
 
 ### /import-league/{leagueCode}
 
